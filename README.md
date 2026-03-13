@@ -5,25 +5,10 @@ This project attempts to numerically simulate dielectric breakdown to generate L
 
 ## Environment Setup
 
-1. **Create and activate a virtual environment**  
+Locate the `environment.yml` file in your directory then use mamba or conda to install it in your machine. Use the environment as your kernel when running the code to ensure consistent versions of the libraries are used.
 
-```bash
-python -m venv venv
-
-# Windows
-venv\Scripts\activate
-# macOS/Linux
-source venv/bin/activate
 ```
-
-2. Convert environment.yml to requirements.txt (requires Conda)
-```bash
-conda env export -f environment.yml --no-builds | grep -v "^prefix:" > requirements.txt
-```
-
-3. Install dependencies in the virtual environment
-```bash
-pip install -r requirements.txt
+mamba env create -f environment.yml -y
 ```
 
 
